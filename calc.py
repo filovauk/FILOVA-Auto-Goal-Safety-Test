@@ -6,3 +6,10 @@ def add(a, b):
     if not isinstance(a, int) or not isinstance(b, int):
         raise TypeError("add() takes two integers")
     return a + b
+
+
+def sub(a, b):
+    """Return a minus b for two integers."""
+    if not isinstance(a, int) or not isinstance(b, int):
+        raise TypeError("sub() takes two integers")
+    return a - b
