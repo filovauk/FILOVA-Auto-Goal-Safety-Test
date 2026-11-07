@@ -13,3 +13,10 @@ def sub(a, b):
     if not isinstance(a, int) or not isinstance(b, int):
         raise TypeError("sub() takes two integers")
     return a - b
+
+
+def mul(a, b):
+    """Return a times b for two integers."""
+    if not isinstance(a, int) or not isinstance(b, int):
+        raise TypeError("mul() takes two integers")
+    return a * b

@@ -1,6 +1,6 @@
 import unittest
 
-from calc import add, sub
+from calc import add, mul, sub
 
 
 class TestAdd(unittest.TestCase):
@@ -19,6 +19,15 @@ class TestSub(unittest.TestCase):
     def test_rejects_non_integers(self):
         with self.assertRaises(TypeError):
             sub(5, "3")
+
+
+class TestMul(unittest.TestCase):
+    def test_mul(self):
+        self.assertEqual(mul(4, 3), 12)
+
+    def test_rejects_non_integers(self):
+        with self.assertRaises(TypeError):
+            mul(4, "3")
 
 
 if __name__ == "__main__":
